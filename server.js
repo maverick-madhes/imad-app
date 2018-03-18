@@ -5,10 +5,52 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/', function (req, res) {res.sendFile(path.join(__dirname, 'ui', 'index.html'));}  );
 
+var one = {
+  title : 'one',
+  heading: 'page one',
+  content : `<div class="container">
+ hello world...i unconciously typed hello world.Files on the sidebar represent the source code of your web app. These files are all actually saved in a git repository on your github account. This console allows you to edit these files, deploy your app, and save these files back to your github repository.Files on the sidebar represent the source code of your web app. These files are all actually saved in a git repository on your github account. This console allows you to edit these files, deploy your app, and save these files back to your github repository. 
+</div>
+<div>
+<p>
+    hello world.Files on the sidebar represent the source code of your web app. These files are all actually saved in a git repository on your github account. This console allows you to edit these files, deploy your app, and save these files back to your github repository.Files on the sidebar represent the source code of your web app. These files are all actually saved in a git repository on your github account. This console allows you to edit these files, deploy your app, and save these files back to your github repository.
+   </p>
+<table border="1">
+<tr>
+<td>one</td>
+<td>two</td>
+</tr>
+</table>
+
+</div>`
+};
+
+function createTemplate (data){
+    var title = data.title;
+    var heading = data.heading;
+    var content = data.content;
+    
+    var htmlTemplate = `
+    <html>
+    <head>
+    <title>
+        ${title}    
+    </title>
+    <link href="/ui/style.css" rel="stylesheet" />
+    
+    </head>
+    <a href="/">Home</a>
+    <h1>${heading} </h1>
+    ${content}
+    <hr />
+    </html>
+    `;
+    
+    return htmlTemplate;
+}
 app.get('/one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'page-one.html'));
+  res.send(createTemplate(one));
 });
 
 app.get('/two', function (req, res) {
