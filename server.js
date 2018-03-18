@@ -5,9 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
+app.get('/', function (req, res) {res.sendFile(path.join(__dirname, 'ui', 'index.html'));}  );
 
 app.get('/one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'page-one.html'));
@@ -29,9 +27,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'one.html'));
-});
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
