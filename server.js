@@ -5,6 +5,13 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var names=[];
+app.get('/submit', function(req,res){
+  var name = req.query.name;
+  names.push(name);
+  res.send(JSON.stringify(names));
+}
+);
 
 var counter = 0;
 app.get('/counter', function (req, res) {
