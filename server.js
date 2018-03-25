@@ -15,7 +15,6 @@ app.get('/counter', function (req, res) {
 
 
 
-
 var articles = {
     one : {
       title: 'one',
@@ -103,13 +102,6 @@ app.get('/ui/main.js', function (req, res) {
 });
 
 
-var counter = 0;
-app.get('/counter', function (req, res) {
-  counter = counter + 1;
-  res.send(counter.toString());
-});
-
-
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -125,4 +117,3 @@ var port = 8080;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
-
