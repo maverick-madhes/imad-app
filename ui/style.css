@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     margin-top: 75px;
+    background-color: lightblue;
 }
 
 .center {
@@ -16,7 +17,8 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 .container {
