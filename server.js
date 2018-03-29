@@ -50,9 +50,7 @@ var articles = {
 	<p>
 		here we go...lets try it out 
 	</p>
-	<form>
-	<input type="submit"/>submit
-	</form>
+    
     </div>
     </body>`
     },
