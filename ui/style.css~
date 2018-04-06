@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    margin-top: 75px;
+    background-color: lightblue;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 300%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 300px;
+    width: 200px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 50%;
+    font-family: sans-serif;
+    color: #8b00a2;
+    padding-left: 15px;
+    padding-right: 15px;
+ }
