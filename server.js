@@ -8,7 +8,7 @@ var config = {
   database: 'madheswaran1999',
   host: 'db.imad.hasura-app.io',
   port: '5432',
-  password: process.env.DB_PASSWORD
+  password: 'db-madheswaran1999-75273'
 };
 var app = express();
 app.use(morgan('combined'));
@@ -138,7 +138,7 @@ app.get('/', function (req, res) {
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 
-var port = 8080;
+var port = 80;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
