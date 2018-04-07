@@ -108,8 +108,8 @@ function createTemplate (data){
     
     return htmlTemplate;
 }
-app.get('/article/:articleName', function (req, result) {
-  Pool.query("select * from article where title = '" + req.params.articleName + "'", function(err,res){
+app.get('/article/:articleName', function (req, res) {
+  Pool.query("select * from article where title = '" + req.params.articleName + "'", function(err,result){
     if (err){
       res.status(500).send(err.toString());
     } else {
