@@ -108,7 +108,7 @@ function createTemplate (data){
     
     return htmlTemplate;
 }
-app.get('/article/:articleName', function (req, res) {
+app.get('/article/:articleName', function (req, result) {
   Pool.query("select * from article where title = '" + req.params.articleName + "'", function(err,res){
     if (err){
       res.status(500).send(err.toString());
