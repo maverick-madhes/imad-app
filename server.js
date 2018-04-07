@@ -41,7 +41,7 @@ app.get('/counter', function (req, res) {
 
 
 
-
+/*
 var articles = {
     one : {
       title: 'one',
@@ -83,7 +83,7 @@ var articles = {
     </p>
 </div>`
     },
-};
+};*/
 
 function createTemplate (data){
     var title = data.title;
