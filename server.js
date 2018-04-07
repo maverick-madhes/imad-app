@@ -40,51 +40,6 @@ app.get('/counter', function (req, res) {
 });
 
 
-
-/*
-var articles = {
-    one : {
-      title: 'one',
-      heading: 'page one',
-      content: `<div class="container">
-     hello world...i unconciously typed hello world.Files on the sidebar represent the source code of your web app. These files are all actually saved in a git repository on your github account. This console allows you to edit these files, deploy your app, and save these files back to your github repository.Files on the sidebar represent the source code of your web app. These files are all actually saved in a git repository on your github account. This console allows you to edit these files, deploy your app, and save these files back to your github repository. 
-    </div>
-    <div>
-    <p>
-        hello world.Files on the sidebar represent the source code of your web app. These files are all actually saved in a git repository on your github account. This console allows you to edit these files, deploy your app, and save these files back to your github repository.Files on the sidebar represent the source code of your web app. These files are all actually saved in a git repository on your github account. This console allows you to edit these files, deploy your app, and save these files back to your github repository.
-       </p>
-    <table border="1">
-    <tr>
-    <td>one</td>
-    <td>two</td>
-    </tr>
-    </table>
-    
-    </div>`
-    },
-    two : {
-    title: 'two',
-     heading: 'page two',
-    content: `<div class="container">
-
-	<p>
-		here we go...lets try it out 
-	</p>
-    
-    </div>
-    </body>`
-    },
-    three : {
-          title: 'three',
-      heading: 'page three',
-      content: `<div class="container">
-    <p>
-        bla bla bla bla bla ...wow i ty[e d so fast...but there is a typo...fuck
-    </p>
-</div>`
-    },
-};*/
-
 function createTemplate (data){
     var title = data.title;
     var heading = data.heading;
