@@ -15,7 +15,7 @@ request.onreadystatechange = function (){
     }
 };
 //make the request
-request.open('GET','http://http://madheswaran1999.imad.hasura-app.io/counter',true);
+request.open('GET','http://madheswaran1999.imad.hasura-app.io/counter',true);
 request.send(null);
 };
 
@@ -47,6 +47,6 @@ submit.onclick = function(){
 }
 
 };
-request.open('GET','http://http://madheswaran1999.imad.hasura-app.io/submit?name=' + name,true);
+request.open('GET','http://madheswaran1999.imad.hasura-app.io/submit?name=' + name,true);
 request.send(null);
 };
