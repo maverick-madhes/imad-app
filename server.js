@@ -69,7 +69,7 @@ function createTemplate (data){
     return htmlTemplate;
 }
 
-
+var Pool= new Pool(config);
 app.get('/article/:articleName', function (req, res) {
   // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
   pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function (err, result) {
